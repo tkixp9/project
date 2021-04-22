@@ -1,3 +1,4 @@
+import '../../less/page/home.less'
 const incomeController = (() => {
   const linkArray = [
     { title: '概况介绍', url: 'https://www.vzhuo.com' },
@@ -11,7 +12,7 @@ const incomeController = (() => {
     `<div class="page-wrap" id="page-home">
       <div class="content-wrap top-head-wrap">
         <div class="content-inner-wrap">
-          <img src="https://s.vzhuo.com/static/imgs/logo_color.png" />
+          <img class="logo-img" src="https://s.vzhuo.com/static/imgs/logo_color.png" />
           <div class="head-link-wrap">
             ${linkArray.map((item) => {
               return `<a href="${item.url}" class="head-link-item">${item.title}</a>`

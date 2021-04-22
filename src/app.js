@@ -30,7 +30,7 @@ const initApp = () => {
   // const phone = utils.getParameterByName('phone');
   // openid && (localStorage.openidUrl = openid);
   // phone && (localStorage.phoneUrl = phone);
-  initRPX()
+  // initRPX()
   router.init()
   router.startRouter()
 }
