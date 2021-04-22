@@ -1,0 +1,57 @@
+@import "./variable";
+.app-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrap {
+  width: 100%;
+}
+.content-inner-wrap {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.page-in-frame {
+  height: 100%;
+  overflow: auto;
+}
+
+.page-card {
+  margin: .28rem;
+  padding: .28rem;;
+  background: @white-color;
+}
+
+.card-title {
+  font-size: .32rem;
+}
+
+.btn-normal {
+  background: @blue-color;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  padding: 0 0.15rem;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  color: @white-color;
+  font-size: .24rem;
+}
+
+.disabled-btn {
+  filter: alpha(opacity=45);
+  -moz-opacity: 0.45;
+  -khtml-opacity: 0.45;
+  opacity: 0.45;
+  &:hover {
+    cursor: default;
+  }
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}

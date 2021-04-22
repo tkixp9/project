@@ -10,7 +10,7 @@ const incomeController = (() => {
   }
   return {
     init: (params) => {
-      $('.content-container').empty().append(contentHtml)
+      $('.app-wrap').empty().append(contentHtml)
       bindActions()
     }
   }

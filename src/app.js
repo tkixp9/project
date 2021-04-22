@@ -1,7 +1,7 @@
 import 'babel-polyfill'
 
 import './less/public.less'
-import './less/main.less'
+import './less/common.less'
 import './lib/jquery.min.js'
 import { initRPX } from './js/utils/_utils'
 import router from './js/utils/_router'

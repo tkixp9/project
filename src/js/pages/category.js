@@ -60,7 +60,7 @@ const categoryController = (() => {
         $('.category-tag').text(['新进代理', '普通代理', '高级代理', '特约代理'][(res.proxy_seller_level - 1) || 0]).show()
       },
       fcb: (res) => {
-        $('.content-container').empty()
+        $('.app-wrap').empty()
         frameutils.showDialog({
           text: res.msg || '获取数据失败！', okCallback: () => {
             router.push({ action: 'login' })
@@ -71,7 +71,7 @@ const categoryController = (() => {
   }
   return {
     init: (params) => {
-      $('.content-container').empty().append(getHtml())
+      $('.app-wrap').empty().append(getHtml())
       fetchData()
       bindActions()
     }
