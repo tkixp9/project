@@ -1,0 +1,109 @@
+
+@keyframes clip-animation-tl-tr {
+  0% {
+    clip-path: polygon(20rem 10rem, 80rem 0, 80rem 40rem, 0px 40rem);
+  }
+  100% {
+    clip-path: polygon(0 0, 60rem 10rem, 80rem 40rem, 0px 40rem);
+  }
+}
+
+@keyframes clip-animation-tr-tl {
+  0% {
+    clip-path: polygon(0 0, 60rem 10rem, 80rem 40rem, 0px 40rem);
+  }
+  100% {
+    clip-path: polygon(20rem 10rem, 80rem 0, 80rem 40rem, 0px 40rem);
+  }
+}
+
+@keyframes clip-animation-tl-bl {
+  0% {
+    clip-path: polygon(20rem 10rem, 80rem 0, 80rem 40rem, 0px 40rem);
+  }
+  100% {
+    clip-path: polygon(0 0, 80rem 0, 80rem 40rem, 20rem 30rem);
+  }
+}
+
+@keyframes clip-animation-bl-tl {
+  0% {
+    clip-path: polygon(0 0, 80rem 0, 80rem 40rem, 20rem 30rem);
+  }
+  100% {
+    clip-path: polygon(20rem 10rem, 80rem 0, 80rem 40rem, 0px 40rem);
+  }
+}
+@keyframes clip-animation-br-tr {
+  0% {
+    clip-path: polygon(0 0, 80rem 0, 60rem 30rem, 0px 40rem);
+  }
+  100% {
+    clip-path: polygon(0 0, 60rem 10rem, 80rem 40rem, 0px 40rem);
+  }
+}
+
+@keyframes clip-animation-tr-br {
+  0% {
+    clip-path: polygon(0 0, 60rem 10rem, 80rem 40rem, 0px 40rem);
+  }
+  100% {
+    clip-path: polygon(0 0, 80rem 0, 60rem 30rem, 0px 40rem);
+  }
+}
+@keyframes clip-animation-br-bl {
+  0% {
+    clip-path: polygon(0 0, 80rem 0, 60rem 30rem, 0px 40rem);
+  }
+  100% {
+    clip-path: polygon(0 0, 80rem 0, 80rem 40rem, 20rem 30rem);
+  }
+}
+@keyframes clip-animation-bl-br {
+  0% {
+    clip-path: polygon(0 0, 80rem 0, 80rem 40rem, 20rem 30rem);
+  }
+  100% {
+    clip-path: polygon(0 0, 80rem 0, 60rem 30rem, 0px 40rem);
+  }
+}
+
+.polygon-tl-tr {
+  animation: clip-animation-tl-tr 2s 1 forwards;
+  -webkit-animation: clip-animation-tl-tr 2s 1 forwards;
+}
+
+.polygon-tr-tl {
+  animation: clip-animation-tr-tl 2s 1 forwards;
+  -webkit-animation: clip-animation-tr-tl 2s 1 forwards;
+}
+
+.polygon-tl-bl {
+  animation: clip-animation-tl-bl 2s 1 forwards;
+  -webkit-animation: clip-animation-tl-bl 2s 1 forwards;
+}
+
+.polygon-bl-tl {
+  animation: clip-animation-bl-tl 2s 1 forwards;
+  -webkit-animation: clip-animation-bl-tl 2s 1 forwards;
+}
+
+.polygon-br-tr {
+  animation: clip-animation-br-tr 2s 1 forwards;
+  -webkit-animation: clip-animation-br-tr 2s 1 forwards;
+}
+
+.polygon-tr-br {
+  animation: clip-animation-tr-br 2s 1 forwards;
+  -webkit-animation: clip-animation-tr-br 2s 1 forwards;
+}
+
+.polygon-br-bl {
+  animation: clip-animation-br-bl 2s 1 forwards;
+  -webkit-animation: clip-animation-br-bl 2s 1 forwards;
+}
+
+.polygon-bl-br {
+  animation: clip-animation-bl-br 2s 1 forwards;
+  -webkit-animation: clip-animation-bl-br 2s 1 forwards;
+}

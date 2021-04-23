@@ -1,10 +1,97 @@
 @import "../variable";
+@import "../polygon";
+
 #page-home {
   .top-head-wrap {
-    height: 2rem;
+    background-color: @black-color;
+    color: @white-color-gray;
     padding: 2rem 0;
+    position: fixed;
+    .content-inner-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     .logo-img {
       width: 8rem;
+      flex: 0 0 12rem;
+    }
+    .head-link-wrap {
+      margin-left: 4rem;
+      width: 600px;
+      flex: 1;
+      .head-link-item {
+        width: 10rem;
+        display: inline-block;
+        line-height: 1.4rem;
+      }
+    }
+  }
+
+  .top-gallery-wrap {
+    background-color: @black-color;
+    padding: 8rem 0 2rem;
+    color: @white-color-gray;
+    width: 100%;
+    margin-bottom: 2rem;
+    .swiper-container {
+      --swiper-pagination-color: @white-color-gray;
+      .swiper-slide {
+        padding: 0 4px;
+      }
+      .gallery-text {
+        width: 40%;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .introduce-text {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .top-title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin: 1rem 0 2.4rem;
+      }
+      .summary-des {
+        margin-bottom: 2rem;
+      }
+      .pic-wrap {
+        width: 100%;
+        text-align: right;
+        img {
+          width: 60%;
+          margin: 2rem 0;
+          display: inline-block;
+        }
+        .clip-top-left {
+          clip-path: polygon(20rem 10rem, 80rem 0, 80rem 40rem, 0px 40rem);
+        }
+        .clip-top-right {
+          clip-path: polygon(0 0, 60rem 10rem, 80rem 40rem, 0px 40rem);
+        }
+        .clip-bottom-right {
+          clip-path: polygon(0 0, 80rem 0, 60rem 30rem, 0px 40rem);
+        }
+        .clip-bottom-left {
+          clip-path: polygon(0 0, 80rem 0, 80rem 40rem, 20rem 30rem);
+        }
+      }
+      .swiper-pagination {
+        position: absolute;
+        bottom: 3rem;
+        left: 2rem;
+        display: inline-block;
+        width: auto;
+        .swiper-pagination-bullet {
+          background-color: @gray-color-light;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: @white-color-gray;
+        }
+      }
     }
   }
 }

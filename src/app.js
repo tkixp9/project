@@ -1,5 +1,7 @@
 import 'babel-polyfill'
 
+// import './lib/swiper.min.css'
+// import './lib/swiper.min.js'
 import './less/public.less'
 import './less/common.less'
 import './lib/jquery.min.js'
