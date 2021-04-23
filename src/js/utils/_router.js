@@ -2,13 +2,13 @@
 
 import home from '../pages/home'
 import category from '../pages/category'
-import categoryIncome from '../pages/categoryIncome'
+import aboutUs from '../pages/about-us'
 import { getAllparams } from './_utils'
 
 const routerPaths = [
   { action: 'home', title: '', handler: home.start },
   { action: 'category', title: '', handler: category.start },
-  { action: 'category_income', handler: categoryIncome.start, title: '收益' },
+  { action: 'about_us', handler: aboutUs.start, title: '收益' },
 ]
 
 const DEFAULT_PATH = 'home'
